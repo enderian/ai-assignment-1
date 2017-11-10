@@ -37,4 +37,9 @@ public class Teacher {
     public int getMaxHoursPerWeek() {
         return maxHoursPerWeek;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

@@ -30,4 +30,9 @@ public class Lesson {
     public int getHoursPerWeek() {
         return hoursPerWeek;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

@@ -26,7 +26,8 @@ public class LessonReader {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] split = line.split(",");
+                String[] split = trimStringByString(line, ",").split(",");
+                if (split.length < 4) continue;
 
                 lessons.add(new Lesson(
                         Integer.parseInt(split[0].trim()),
@@ -41,6 +42,21 @@ public class LessonReader {
         }
 
         return lessons;
+    }
+
+    public static String trimStringByString(String text, String trimBy) {
+        int beginIndex = 0;
+        int endIndex = text.length();
+
+        while (text.substring(beginIndex, endIndex).startsWith(trimBy)) {
+            beginIndex += trimBy.length();
+        }
+
+        while (text.substring(beginIndex, endIndex).endsWith(trimBy)) {
+            endIndex -= trimBy.length();
+        }
+
+        return text.substring(beginIndex, endIndex);
     }
 
 }

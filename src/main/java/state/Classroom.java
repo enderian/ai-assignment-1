@@ -19,4 +19,9 @@ public class Classroom {
     public int getNumber() {
         return number;
     }
+
+    @Override
+    public String toString() {
+        return aClass.name() + number;
+    }
 }

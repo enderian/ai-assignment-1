@@ -1,2 +1,52 @@
 ID, Name, Class, HoursPerWeek
-1, Ancient Greek, A, 2
+1,Modern Greek, A,3
+2,Modern Greek, B,2
+3,Modern Greek, C,2
+4,Literature, A,2
+5,Literature, B,2
+6,Literature, C,2
+7,Ancient Greek, A,2
+8,Ancient Greek, B,2
+9,Ancient Greek, C,2
+10,Ancient Literature, A,2
+11,Ancient Literature, B,2
+12,Ancient Literature, C,2
+13,Mathematics, A,4
+14,Mathematics, B,4
+15,Mathematics, C,4
+16,Physics, A,1
+17,Physics, B,2
+18,Physics, C,2
+19,Chemistry, B,1
+20,Chemistry, C,1
+21,Biology, A,1
+22,Biology, B,1
+23,Biology, C,1
+24,Geography,A,1
+25,Geography,B,2
+26,Home Economics,A,2
+27,History,A,2
+28,History,B,2
+29,History,C,2
+30,Civics,C,2
+31,Religion,A,2
+32,Religion,B,2
+33,Religion,C,2
+34,English,A,2
+35,English,B,2
+36,English,C,2
+37,PE,A,2
+38,PE,B,2
+39,PE,C,2
+40,Technology,A,1
+41,Technology,B,1
+42,Technology,C,1
+43,CS,A,1
+44,CS,B,1
+45,CS,C,1
+46,Music,A,1
+47,Music,B,1
+48,Music,C,1
+49,Art,A,1
+50,Art,B,1
+51,Art,C,1

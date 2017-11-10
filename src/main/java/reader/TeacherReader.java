@@ -13,7 +13,7 @@ import java.util.List;
 
 public class TeacherReader {
 
-    public static List<Teacher> readLessons(File file) {
+    public static List<Teacher> readTeachers(File file) {
 
         List<Teacher> teachers = new ArrayList<>();
 
@@ -27,7 +27,8 @@ public class TeacherReader {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] split = line.split(",");
+                String[] split = trimStringByString(line, ",").split(",");
+                if (split.length < 4) continue;
                 List<Integer> teachableLessons = new ArrayList<>();
 
                 for (int i = 4; i < split.length; i++) {
@@ -47,6 +48,21 @@ public class TeacherReader {
         }
 
         return teachers;
+    }
+
+    public static String trimStringByString(String text, String trimBy) {
+        int beginIndex = 0;
+        int endIndex = text.length();
+
+        while (text.substring(beginIndex, endIndex).startsWith(trimBy)) {
+            beginIndex += trimBy.length();
+        }
+
+        while (text.substring(beginIndex, endIndex).endsWith(trimBy)) {
+            endIndex -= trimBy.length();
+        }
+
+        return text.substring(beginIndex, endIndex);
     }
 
 }
