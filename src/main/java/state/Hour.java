@@ -1,6 +1,6 @@
 package state;
 
-public class Hour {
+public class Hour implements Cloneable {
 
     private int day;
     private int hour;

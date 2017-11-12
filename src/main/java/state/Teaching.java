@@ -3,22 +3,21 @@ package state;
 import model.Lesson;
 import model.Teacher;
 
-public class Teaching {
+public class Teaching implements Cloneable {
 
-    private Lesson lesson;
-    private Teacher teacher;
+    public Hour hour;
+    public Lesson lesson;
+    public Teacher teacher;
 
-    public Teaching(Lesson lesson, Teacher teacher) {
+    public Teaching(Hour hour, Lesson lesson, Teacher teacher) {
+        this.hour = hour;
         this.lesson = lesson;
         this.teacher = teacher;
     }
 
-    public Lesson getLesson() {
-        return lesson;
-    }
-
-    public Teacher getTeacher() {
-        return teacher;
+    @Override
+    public String toString() {
+        return lesson.getName() + " (" + teacher.getName() + ")";
     }
 
     @Override
@@ -27,15 +26,25 @@ public class Teaching {
         if (o == null || getClass() != o.getClass()) return false;
 
         Teaching teaching = (Teaching) o;
-
-        if (lesson != null ? !lesson.equals(teaching.lesson) : teaching.lesson != null) return false;
-        return teacher != null ? teacher.equals(teaching.teacher) : teaching.teacher == null;
+        if (!lesson.equals(teaching.lesson)) return false;
+        return teacher.equals(teaching.teacher);
     }
 
     @Override
     public int hashCode() {
-        int result = lesson != null ? lesson.hashCode() : 0;
-        result = 31 * result + (teacher != null ? teacher.hashCode() : 0);
+        int result = hour.hashCode();
+        result = 31 * result + lesson.hashCode();
+        result = 31 * result + teacher.hashCode();
         return result;
+    }
+
+    @Override
+    protected Object clone() {
+        try {
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

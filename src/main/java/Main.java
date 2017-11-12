@@ -1,4 +1,3 @@
-import calc.CostCalculator;
 import calc.HeuristicCalculator;
 import model.Class;
 import model.Lesson;
@@ -14,8 +13,7 @@ import java.util.*;
 
 public class Main {
 
-    private static Schedule bestSchedule;
-    private static int lastDepth = 0;
+    public final static int DEPTH_COST = 10;
 
     public static void main(String[] args) {
 
@@ -52,52 +50,38 @@ public class Main {
         System.out.println("Maximum depth will be: " + Schedule.MAX_DEPTH);
         System.out.println("Started calculations at: " + timeNow);
 
-        Schedule schedule = new Schedule(0, 0, 0);
+        Schedule schedule = new Schedule(0);
         schedule.generateRandom();
-        schedule.setPriority(1);
 
-        Map<Integer, Integer> costSoFar = new HashMap<>();
-        costSoFar.put(0, 1);
-        Map<Schedule, Schedule> cameFrom = new HashMap<>();
-        cameFrom.put(schedule, null);
+        PriorityQueue<Schedule> a = new PriorityQueue<>(new ScheduleComparator());
+        HashSet<Schedule> visited = new HashSet<>();
+        a.offer(schedule);
 
-        Queue<Schedule> traverse = new PriorityQueue<>(new ScheduleComparator());
-        traverse.add(schedule);
+        while (!a.isEmpty()) {
+            Schedule current = a.poll();
 
-        System.out.println("Initial state:");
-        System.out.println(schedule.toString());
+            for (Schedule successor : current.generateChildren()) {
+                if (!visited.contains(successor)) {
+                    successor.distance = HeuristicCalculator.calculate(successor);
+                    if (successor.distance == 0) {
+                        //TODO GOAL
+                        System.out.println(successor.toString());
 
-        int iterations = 0;
-        while (!traverse.isEmpty()) {
-            Schedule current = traverse.poll();
-            int lastCost = costSoFar.get(current.getDepth());
+                        System.out.println("Ended at: " + System.currentTimeMillis());
+                        System.out.println("This only took: " + (System.currentTimeMillis() - timeNow) / 1000 + "s");
+                        return;
+                    }
+                    //successor.distance += HeuristicCalculator.calculateLight(successor);
+                    successor.cost = current.cost + DEPTH_COST;
+                    successor.priority = successor.cost + successor.distance;
 
-            if (HeuristicCalculator.calculate(current) == 0) {
-                System.out.println(current.toString());
-                System.out.println("Final state.");
-                return;
-            }
-
-            current.generateChildren();
-            current.getChildren().forEach(next -> {
-                int newCost = lastCost + CostCalculator.calculate(next);
-
-                if (!costSoFar.containsKey(next.getDepth()) || newCost < costSoFar.get(next.getDepth())) {
-                    costSoFar.put(next.getDepth(), newCost);
-                    next.setPriority(newCost + HeuristicCalculator.calculate(next));
-                    cameFrom.put(next, current);
-                    traverse.offer(next);
+                    a.offer(successor);
+                    visited.add(successor);
                 }
-            });
-            current.getChildren().clear();
-
-            System.out.println(iterations++ + " (" + traverse.size() + ") (" + (current.getDepth()) + ")");
-            System.out.println(HeuristicCalculator.calculate(current));
+            }
+            visited.add(current);
+            System.out.println("Distance now: " + current.priority + " (" + a.size() + ", " + current.getDepth() + ")");
         }
-        System.out.println(traverse.isEmpty());
-
-        System.out.println("Started ended at: " + System.currentTimeMillis());
-        System.out.println("This only took: " + (System.currentTimeMillis() - timeNow) / 1000 + "s");
     }
 
 }
