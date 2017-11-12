@@ -33,8 +33,23 @@ public class HourSchedule {
 
     @Override
     public String toString() {
-        return "\n" + teachings.entrySet().stream().map(
-                (entry) -> "\t" + entry.getKey().toString() + ":" + (entry.getValue() == null ? "Nothing" : entry.getValue().getLesson() + " (" + entry.getValue().getTeacher() +  ")") + "\n"
+        return "\n" + Schedule.CLASSROOMS.stream().map(
+                (clazz) -> "\t" + clazz.toString() + ":" + (teachings.get(clazz) == null ? "Nothing" : teachings.get(clazz).getLesson() + " (" + teachings.get(clazz).getTeacher() +  ")") + "\n"
         ).reduce((a1, a2) -> a1 + a2).orElse("");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        HourSchedule that = (HourSchedule) o;
+
+        return teachings != null ? teachings.equals(that.teachings) : that.teachings == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return teachings != null ? teachings.hashCode() : 0;
     }
 }
