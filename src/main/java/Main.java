@@ -1,3 +1,9 @@
+/*
+    Artificial Intelligence Assignment 1 - Ion Androutsopoulos
+    Authored by:
+        p3150007 Vasileiou Ismini
+        p3150133 Pagkalos Spyridon
+ */
 import calc.HeuristicCalculator;
 import model.Class;
 import model.Lesson;
@@ -9,6 +15,8 @@ import state.Schedule;
 import state.ScheduleComparator;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
@@ -46,8 +54,8 @@ public class Main {
         System.out.println("Available lessons: " + Schedule.LESSONS.size());
         System.out.println("Available teachers: " + Schedule.TEACHERS.size());
 
+        int iterations = 0;
         long timeNow = System.currentTimeMillis();
-        System.out.println("Maximum depth will be: " + Schedule.MAX_DEPTH);
         System.out.println("Started calculations at: " + timeNow);
 
         Schedule schedule = new Schedule(0);
@@ -67,8 +75,20 @@ public class Main {
                         //TODO GOAL
                         System.out.println(successor.toString());
 
+                        try {
+                            FileWriter fileWriter = new FileWriter("result.txt");
+                            fileWriter.write(successor.toString() + "\n");
+                            fileWriter.close();
+
+                            System.out.println("Results written at result.txt");
+                        } catch (IOException e) {
+                            System.err.println("Failed to write to disk!");
+                        }
+                        //successor.distance += HeuristicCalculator.calculateLight(successor);
+
                         System.out.println("Ended at: " + System.currentTimeMillis());
                         System.out.println("This only took: " + (System.currentTimeMillis() - timeNow) / 1000 + "s");
+                        System.out.println("and " + iterations + " iterations.");
                         return;
                     }
                     //successor.distance += HeuristicCalculator.calculateLight(successor);
@@ -80,7 +100,8 @@ public class Main {
                 }
             }
             visited.add(current);
-            System.out.println("Distance now: " + current.priority + " (" + a.size() + ", " + current.getDepth() + ")");
+            System.out.println("Priority now: " + current.priority + " (" + a.size() + ", " + current.getDepth() + ")");
+            iterations++;
         }
     }
 

@@ -1,0 +1,326 @@
+Schedule:
+	A1:
+		1-1: PE (Kostantopoulou)
+		1-2: Modern Greek (Anagnostaki)
+		1-3: Mathematics (Kalikas)
+		1-4: CS (Pagkalos)
+		1-5: Religion (Papas)
+		1-6: Technology (Kostas)
+		1-7: Geography (Makris)
+		2-1: History (Vasileiou)
+		2-2: Physics (Kornakis)
+		2-3: Music (Paparizou)
+		2-4: English (Cameron)
+		2-5: English (Cameron)
+		2-6: History (Vasileiou)
+		2-7: Home Economics (Mouzakis)
+		3-1: Literature (Anagnostaki)
+		3-2: PE (Kostantopoulou)
+		3-3: Art (Charalampou)
+		3-4: Mathematics (Katseli)
+		3-5: Biology (Koutsos)
+		3-6: Modern Greek (Anagnostaki)
+		3-7: Modern Greek (Anagnostaki)
+		4-1: Mathematics (Katseli)
+		4-2: Literature (Anagnostaki)
+		4-3: Ancient Greek (Makrigianni)
+		4-4: Ancient Greek (Kontogianni)
+		4-5: Mathematics (Kalikas)
+		4-6: Ancient Literature (Dimou)
+		4-7: Ancient Literature (Dimou)
+		5-1: Religion (Papas)
+		5-2: Home Economics (Mouzakis)
+		5-3: Nothing
+		5-4: Nothing
+		5-5: Nothing
+		5-6: Nothing
+		5-7: Nothing
+	A2:
+		1-1: Literature (Anagnostaki)
+		1-2: Ancient Greek (Makrigianni)
+		1-3: Mathematics (Kalikas)
+		1-4: Music (Paparizou)
+		1-5: PE (Kostantopoulou)
+		1-6: Biology (Koutsos)
+		1-7: History (Vasileiou)
+		2-1: Technology (Kostas)
+		2-2: Literature (Anagnostaki)
+		2-3: CS (Pagkalos)
+		2-4: Ancient Greek (Kontogianni)
+		2-5: PE (Tsigkas)
+		2-6: Ancient Literature (Dimou)
+		2-7: Nothing
+		3-1: Home Economics (Mouzakis)
+		3-2: Modern Greek (Anagnostaki)
+		3-3: Home Economics (Mouzakis)
+		3-4: History (Vasileiou)
+		3-5: Mathematics (Kalikas)
+		3-6: Physics (Kornakis)
+		3-7: English (Cameron)
+		4-1: Mathematics (Kalikas)
+		4-2: Modern Greek (Anagnostaki)
+		4-3: English (Cameron)
+		4-4: Mathematics (Katseli)
+		4-5: Religion (Papas)
+		4-6: Nothing
+		4-7: Nothing
+		5-1: Ancient Literature (Dimou)
+		5-2: Religion (Papas)
+		5-3: Art (Charalampou)
+		5-4: Modern Greek (Anagnostaki)
+		5-5: Geography (Makris)
+		5-6: Nothing
+		5-7: Nothing
+	A3:
+		1-1: Nothing
+		1-2: Ancient Greek (Kontogianni)
+		1-3: Ancient Literature (Dimou)
+		1-4: Geography (Makris)
+		1-5: Literature (Anagnostaki)
+		1-6: Modern Greek (Anagnostaki)
+		1-7: Biology (Papastavrou)
+		2-1: Nothing
+		2-2: Nothing
+		2-3: Music (Paparizou)
+		2-4: Mathematics (Katseli)
+		2-5: Religion (Papas)
+		2-6: Ancient Greek (Kontogianni)
+		2-7: Mathematics (Katseli)
+		3-1: Art (Charalampou)
+		3-2: History (Vasileiou)
+		3-3: Religion (Papas)
+		3-4: English (Cameron)
+		3-5: Physics (Kornakis)
+		3-6: History (Vasileiou)
+		3-7: CS (Pagkalos)
+		4-1: Literature (Anagnostaki)
+		4-2: Home Economics (Mouzakis)
+		4-3: Ancient Literature (Dimou)
+		4-4: Modern Greek (Anagnostaki)
+		4-5: Modern Greek (Anagnostaki)
+		4-6: PE (Tsigkas)
+		4-7: PE (Tsigkas)
+		5-1: English (Cameron)
+		5-2: Home Economics (Mouzakis)
+		5-3: Mathematics (Katseli)
+		5-4: Technology (Kostas)
+		5-5: Mathematics (Kalikas)
+		5-6: Nothing
+		5-7: Nothing
+	B1:
+		1-1: Nothing
+		1-2: Religion (Papas)
+		1-3: Geography (Makris)
+		1-4: PE (Tsigkas)
+		1-5: Physics (Velou)
+		1-6: CS (Pagkalos)
+		1-7: Technology (Kostas)
+		2-1: Modern Greek (Anagnostaki)
+		2-2: English (Lintara)
+		2-3: Chemistry (Koutsos)
+		2-4: Religion (Papas)
+		2-5: Physics (Velou)
+		2-6: PE (Tsigkas)
+		2-7: Nothing
+		3-1: Ancient Greek (Dimou)
+		3-2: Biology (Papastavrou)
+		3-3: History (Zampeli)
+		3-4: Music (Paparizou)
+		3-5: Geography (Makris)
+		3-6: Nothing
+		3-7: Nothing
+		4-1: Art (Charalampou)
+		4-2: Ancient Greek (Kontogianni)
+		4-3: Nothing
+		4-4: Nothing
+		4-5: Nothing
+		4-6: Nothing
+		4-7: Nothing
+		5-1: Nothing
+		5-2: English (Lintara)
+		5-3: History (Zampeli)
+		5-4: Ancient Literature (Makrigianni)
+		5-5: Literature (Anagnostaki)
+		5-6: Nothing
+		5-7: Nothing
+	B2:
+		1-1: Nothing
+		1-2: Nothing
+		1-3: Biology (Papastavrou)
+		1-4: Music (Paparizou)
+		1-5: History (Zampeli)
+		1-6: PE (Kostantopoulou)
+		1-7: Nothing
+		2-1: CS (Pagkalos)
+		2-2: History (Zampeli)
+		2-3: Technology (Kostas)
+		2-4: Literature (Anagnostaki)
+		2-5: Modern Greek (Anagnostaki)
+		2-6: Art (Charalampou)
+		2-7: Geography (Makris)
+		3-1: Literature (Anagnostaki)
+		3-2: Religion (Papas)
+		3-3: English (Lintara)
+		3-4: Geography (Makris)
+		3-5: PE (Tsigkas)
+		3-6: English (Lintara)
+		3-7: Ancient Literature (Makrigianni)
+		4-1: Nothing
+		4-2: Nothing
+		4-3: Nothing
+		4-4: Nothing
+		4-5: Nothing
+		4-6: Chemistry (Koutsos)
+		4-7: Ancient Greek (Kontogianni)
+		5-1: Mathematics (Kalikas)
+		5-2: Mathematics (Katseli)
+		5-3: Ancient Literature (Makrigianni)
+		5-4: Religion (Papas)
+		5-5: Ancient Greek (Kontogianni)
+		5-6: Physics (Velou)
+		5-7: Mathematics (Kalikas)
+	B3:
+		1-1: Modern Greek (Anagnostaki)
+		1-2: English (Lintara)
+		1-3: Religion (Papas)
+		1-4: Ancient Greek (Dimou)
+		1-5: English (Lintara)
+		1-6: Ancient Greek (Kontogianni)
+		1-7: Nothing
+		2-1: Art (Charalampou)
+		2-2: Religion (Papas)
+		2-3: CS (Pagkalos)
+		2-4: Geography (Makris)
+		2-5: Technology (Kostas)
+		2-6: Mathematics (Katseli)
+		2-7: Physics (Velou)
+		3-1: Geography (Makris)
+		3-2: Ancient Literature (Makrigianni)
+		3-3: PE (Tsigkas)
+		3-4: PE (Kostantopoulou)
+		3-5: Mathematics (Kalikas)
+		3-6: Nothing
+		3-7: Nothing
+		4-1: Physics (Velou)
+		4-2: Chemistry (Koutsos)
+		4-3: Mathematics (Katseli)
+		4-4: History (Zampeli)
+		4-5: History (Zampeli)
+		4-6: Biology (Papastavrou)
+		4-7: Nothing
+		5-1: Modern Greek (Anagnostaki)
+		5-2: Literature (Anagnostaki)
+		5-3: Music (Paparizou)
+		5-4: Nothing
+		5-5: Nothing
+		5-6: Nothing
+		5-7: Nothing
+	C1:
+		1-1: Ancient Literature (Makrigianni)
+		1-2: Religion (Papas)
+		1-3: Music (Paparizou)
+		1-4: English (Lintara)
+		1-5: Mathematics (Kalikas)
+		1-6: Modern Greek (Konstantinou)
+		1-7: Literature (Konstantinou)
+		2-1: Nothing
+		2-2: History (Zampeli)
+		2-3: Literature (Konstantinou)
+		2-4: Chemistry (Koutsos)
+		2-5: Art (Charalampou)
+		2-6: Ancient Greek (Makrigianni)
+		2-7: Ancient Greek (Makrigianni)
+		3-1: Biology (Papastavrou)
+		3-2: Mathematics (Kalikas)
+		3-3: Technology (Kostas)
+		3-4: English (Lintara)
+		3-5: Physics (Velou)
+		3-6: Physics (Velou)
+		3-7: Religion (Papas)
+		4-1: Nothing
+		4-2: PE (Kostantopoulou)
+		4-3: Modern Greek (Konstantinou)
+		4-4: Civics (Mouzakis)
+		4-5: Ancient Literature (Makrigianni)
+		4-6: Mathematics (Kalikas)
+		4-7: CS (Pagkalos)
+		5-1: Nothing
+		5-2: Nothing
+		5-3: Nothing
+		5-4: Nothing
+		5-5: Nothing
+		5-6: History (Zampeli)
+		5-7: Civics (Mouzakis)
+	C2:
+		1-1: Nothing
+		1-2: Civics (Mouzakis)
+		1-3: CS (Pagkalos)
+		1-4: Ancient Literature (Makrigianni)
+		1-5: History (Zampeli)
+		1-6: Nothing
+		1-7: Nothing
+		2-1: Ancient Literature (Makrigianni)
+		2-2: Art (Charalampou)
+		2-3: Biology (Papastavrou)
+		2-4: Literature (Konstantinou)
+		2-5: Mathematics (Kalikas)
+		2-6: Mathematics (Kalikas)
+		2-7: Nothing
+		3-1: Nothing
+		3-2: Technology (Kostas)
+		3-3: Ancient Greek (Makrigianni)
+		3-4: English (Cameron)
+		3-5: History (Zampeli)
+		3-6: Music (Paparizou)
+		3-7: Modern Greek (Konstantinou)
+		4-1: Nothing
+		4-2: Nothing
+		4-3: Nothing
+		4-4: Religion (Papas)
+		4-5: Ancient Greek (Makrigianni)
+		4-6: Civics (Mouzakis)
+		4-7: Modern Greek (Konstantinou)
+		5-1: Literature (Konstantinou)
+		5-2: Physics (Velou)
+		5-3: Mathematics (Kalikas)
+		5-4: Physics (Velou)
+		5-5: Religion (Papas)
+		5-6: English (Lintara)
+		5-7: Chemistry (Koutsos)
+	C3:
+		1-1: Nothing
+		1-2: Ancient Greek (Makrigianni)
+		1-3: Physics (Velou)
+		1-4: Civics (Mouzakis)
+		1-5: Art (Charalampou)
+		1-6: Ancient Literature (Makrigianni)
+		1-7: Physics (Velou)
+		2-1: Literature (Konstantinou)
+		2-2: Mathematics (Kalikas)
+		2-3: PE (Tsigkas)
+		2-4: Ancient Greek (Makrigianni)
+		2-5: Music (Paparizou)
+		2-6: Nothing
+		2-7: Nothing
+		3-1: Nothing
+		3-2: Nothing
+		3-3: English (Cameron)
+		3-4: Literature (Konstantinou)
+		3-5: Civics (Mouzakis)
+		3-6: Modern Greek (Konstantinou)
+		3-7: Nothing
+		4-1: Religion (Papas)
+		4-2: History (Zampeli)
+		4-3: Technology (Kostas)
+		4-4: Biology (Papastavrou)
+		4-5: PE (Kostantopoulou)
+		4-6: Mathematics (Kalikas)
+		4-7: English (Lintara)
+		5-1: Religion (Papas)
+		5-2: Chemistry (Koutsos)
+		5-3: Modern Greek (Konstantinou)
+		5-4: History (Zampeli)
+		5-5: Nothing
+		5-6: Nothing
+		5-7: Nothing
+

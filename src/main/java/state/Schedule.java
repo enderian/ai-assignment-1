@@ -1,3 +1,9 @@
+/*
+    Artificial Intelligence Assignment 1 - Ion Androutsopoulos
+    Authored by:
+        p3150007 Vasileiou Ismini
+        p3150133 Pagkalos Spyridon
+ */
 package state;
 
 import model.Lesson;
@@ -142,7 +148,8 @@ public class Schedule {
         for (int classroom = 0; classroom < CLASSROOMS.size(); classroom++) {
             result.append("\t").append(CLASSROOMS.get(classroom)).append(":\n");
             for (int hour = 0; hour < HOURS.size(); hour++) {
-                result.append("\t\t").append(HOURS.get(hour)).append(": ").append(teachings[classroom][hour]).append("\n");
+                result.append("\t\t").append(HOURS.get(hour)).append(": ")
+                        .append(teachings[classroom][hour] == null ? "Nothing" : teachings[classroom][hour]).append("\n");
             }
         }
         return result.toString();

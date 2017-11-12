@@ -1,3 +1,9 @@
+/*
+    Artificial Intelligence Assignment 1 - Ion Androutsopoulos
+    Authored by:
+        p3150007 Vasileiou Ismini
+        p3150133 Pagkalos Spyridon
+ */
 import model.Class;
 import model.Lesson;
 import model.Teacher;
@@ -13,7 +19,7 @@ public class EqualityTests {
     @Test
     public void testTeachings() {
 
-        Teacher teacher = new Teacher(1, "Pagkalos", Collections.singletonList(1), 1, 1);
+        Teacher teacher = new Teacher(1, "Teacher1", Collections.singletonList(1), 1, 1);
         Lesson lesson = new Lesson(1, "HelloWorld", Class.A, 1);
         Hour hour = new Hour(1, 2);
         Hour hour2 = new Hour(1, 3);

@@ -1,3 +1,9 @@
+/*
+    Artificial Intelligence Assignment 1 - Ion Androutsopoulos
+    Authored by:
+        p3150007 Vasileiou Ismini
+        p3150133 Pagkalos Spyridon
+ */
 package state;
 
 public class Hour implements Cloneable {
@@ -20,6 +26,6 @@ public class Hour implements Cloneable {
 
     @Override
     public String toString() {
-        return day + ":" + hour;
+        return day + "-" + hour;
     }
 }

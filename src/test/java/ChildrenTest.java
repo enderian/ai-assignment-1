@@ -1,3 +1,9 @@
+/*
+    Artificial Intelligence Assignment 1 - Ion Androutsopoulos
+    Authored by:
+        p3150007 Vasileiou Ismini
+        p3150133 Pagkalos Spyridon
+ */
 import model.Class;
 import model.Lesson;
 import model.Teacher;
@@ -38,12 +44,12 @@ public class ChildrenTest {
         Schedule.LESSONS.add(new Lesson(6, "Chemistry", Class.A, 2));
 
         Schedule.TEACHERS = new ArrayList<>();
-        Schedule.TEACHERS.add(new Teacher(1, "Pagkalos1", Collections.singletonList(1), 5, 20));
-        Schedule.TEACHERS.add(new Teacher(2, "Pagkalos2", Collections.singletonList(2), 5, 20));
-        Schedule.TEACHERS.add(new Teacher(3, "Pagkalos3", Collections.singletonList(3), 5, 20));
-        Schedule.TEACHERS.add(new Teacher(4, "Pagkalos4", Collections.singletonList(4), 5, 20));
-        Schedule.TEACHERS.add(new Teacher(5, "Pagkalos5", Collections.singletonList(5), 5, 20));
-        Schedule.TEACHERS.add(new Teacher(6, "Pagkalos6", Collections.singletonList(6), 5, 20));
+        Schedule.TEACHERS.add(new Teacher(1, "Teacher1", Collections.singletonList(1), 5, 20));
+        Schedule.TEACHERS.add(new Teacher(2, "Teacher2", Collections.singletonList(2), 5, 20));
+        Schedule.TEACHERS.add(new Teacher(3, "Teacher3", Collections.singletonList(3), 5, 20));
+        Schedule.TEACHERS.add(new Teacher(4, "Teacher4", Collections.singletonList(4), 5, 20));
+        Schedule.TEACHERS.add(new Teacher(5, "Teacher5", Collections.singletonList(5), 5, 20));
+        Schedule.TEACHERS.add(new Teacher(6, "Teacher6", Collections.singletonList(6), 5, 20));
 
         Schedule schedule = new Schedule(0);
         schedule.generateRandom();
